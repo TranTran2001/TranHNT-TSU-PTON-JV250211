@@ -3,76 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Execies7</title>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Trang web bán hàng</h1>
-    </header>
-    <nav>
-        <ol>
-            <li><a href=""> Trang chủ</a></li>
-            <li><a href="./sanpham.html">Sản phẩm</a></li>
-            <li><a href="./gioithieu.html">Giới thiệu</a></li>
-            <li><a href="./lienhe.html">Liên hệ</a></li>
-        </ol>
-    </nav>
     <main>
-        <table border="1" cellpadding="5" cellspacing="2">
-            <header>
-                <h2>Thông tin sản phẩm</h2>
-            </header>
-            <thead>
+        <form action="https://myseverr.com" menthod="POST">
+            <table>
                 <tr>
-                    <th>Tên sản phẩm</th>
-                    <th>Mô tả</th>
-                    <th>Giá</th>
-                    <th>Số lượng</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Sản phẩm 1</td>
-                    <td>Mô tả sản phẩm 1</td>
-                    <td>100.000đ</td>
-                    <td>10</td>
+                    <th>Sở thích của bạn</th>
                 </tr>
                 <tr>
-                    <td>Sản phẩm 2</td>
-                    <td>Mô tả sản phẩm 2</td>
-                    <td>200.000đ</td>
-                    <td>5</td>
+                    <td>
+                        <label for="name">Họ và tên: </label>
+                            <input type="text" name="name" />
+                    </td>
                 </tr>
                 <tr>
-                    <td>Sản phẩm 3</td>
-                    <td>Mô tả sản phẩm 3</td>
-                    <td>300.000đ</td>
-                    <td>3</td>
+                    <td>
+                        <label for="email">Email: </label>
+                            <input type="email" name="email" placeholder="abc@gmail.com" />
+                    </td>
                 </tr>
-            </tbody>
-        </table>
-        <form action="https://myseverr.com" menthod="GET">
-            <header>
-                <h2>Thông tin người dùng</h2>
-            </header>
-            <br />
-            <label for="name">Họ và tên: </label>
-                <input type="text" name="name" />
-            <br />
-            <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="abc@gmail.com" />
-            <br />
-            <label for="phone">Số điện thoại: </label>
-                <input type="tel" name="phonephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" />
-            <br />
-            <label for="address">Địa chỉ: </label>
-                <input type="text" name="address" />
-            <br />
-            <input type="submit" value="Đặt hàng">
+                <tr>
+                    <table>
+                        <td>Sở thích:</td>
+                        <td>
+                            <label><input type="checkbox" name="hobby" value="spots" />Thể thao</label>
+                            <label><input type="checkbox" name="hobby" value="music" />Âm nhạc</label>
+                            <label><input type="checkbox" name="hobby" value="reading" />Đọc sách</label>
+                            <br />
+                            <label><input type="checkbox" name="hobby" value="web" />Lướt web</label>
+                            <label><input type="checkbox" name="hobby" value="gaming" />Chơi game</label>
+                            <label><input type="checkbox" name="hobby" value="movie" />Xem phim</label>
+                            <br />
+                            <label><input type="checkbox" name="hobby" value="travel" />Du lịch</label>
+                        </td> 
+                    </table>
+                </tr>
+            </table>
+            <input type="submit" value="Gửi thông tin">
+            <input type="reset" value="Đặt lại">
         </form>
     </main>
-    <fooder>
-        <p>&#169;2024 Trang web bán hàng</p>
-    </fooder>
 </body>
 </html>
